@@ -7,44 +7,48 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <style>
         body {
-            font-family: 'Courier New', Courier, monospace;
+            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #121212;
-            color: #e0e0e0;
+            padding: 0;    
+            background-image: url(website_images/bg.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #ffffff;
         }
         header {
-            background-color: #1e1e1e;
-            color: #ff6600;
+            background-color: #5c98ff;
+            color: white;
             padding: 10px 0;
             text-align: center;
-            border-bottom: 2px solid #ff6600;
         }
         .container {
             width: 80%;
-            margin: 20px auto;
+            margin: 0 auto;
             padding: 20px;
-            background-color: #1c1c1c;
-            border: 2px solid #444444;
-            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            background-color: #262626;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         img {
             max-width: 100%;
             height: auto;
-            border: 2px solid #333333;
-            margin: 5px 0;
-            display: block;
         }
         a {
-            color: #ff6600;
+            color: #5c98ff;
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
         }
-        h1, h2 {
+        h1 {
+            border-bottom: none;
+            padding-bottom: none;
+        }
+
+        h2 {
             border-bottom: 1px solid #444444;
             padding-bottom: 5px;
+        }
         }
         p {
             line-height: 1.6;
@@ -56,9 +60,12 @@
         <h1>andrewchapl.in</h1>
     </header>
     <div class="container">
+
+
+
         <h2>Hello!</h2>
         <p>
-            I am Andrew Chaplin and this is my work-in-progress website. 
+        I am Andrew Chaplin and this is my work-in-progress website. 
         </p>
 
         <h2>Quote of the Day:</h2>
@@ -70,16 +77,21 @@
 
         <h2>IAQ (infrequently asked questions):</h2>
         <p>
-            <b>andrew you nerd why the heck did you make a website:</b> It's fun, customizable, and lets me practice web development.<br>
-            <b>My name is also Andrew Chaplin, can I buy your domain?:</b> Yes, email me.<br>
-            <b>How did you make this website?:</b> It's written in HTML with some JavaScript for the more interactive parts (working on it) and hosted on GitHub Pages.<br>
-            <b>When did you make this?</b> Grade 9, but its current domain name was acquired on August 26.<br>
-            <b>How many times have people visited this website?:</b> <span id="visit-count">Loading...</span> (most of these were me).<br>
-            <b>I have another question:</b> Email me.<br>
+        <b>andrew you nerd why the fuck did you make a website:</b> It's fun, customizable, and lets me practice web development.<br>
+        <b>My name is also Andrew Chaplin, can I buy your domain?:</b> Yes, email me.<br>
+        <b>How did you make this website?:</b> It's written in HTML with some JavaScript for the more interactive parts (working on it) and hosted on GitHub Pages.<br>
+        <b>When did you make this?</b> Grade 9, but its current domain name was acquired on August 26.<br>
+        <b>How many times have people visited this website?:</b> <span id="visit-count">Loading...</span>.<br>
+        <b>I have another question:</b> Email me.<br>
         </p>
 
         <h2>Contact me:</h2>
-        <p><a href="mailto: iamandrewchaplin@gmail.com">Email</a> [iamandrewchaplin@gmail.com]</p>
+        
+
+        <p><a href="mailto: iamandrewchaplin@gmail.com">Email</a> [iamandrewchaplin@gmail.com]<br>
+
+        </p>
+
 
         <h2>Recent Photos:</h2>
         <img src="website_images/image1.jpg" style="width: 300px; height: 200px;" alt="Placeholder Image">  
@@ -87,23 +99,26 @@
         <img src="website_images/image3.jpg" style="width: 300px; height: 200px;" alt="Placeholder Image">
         <img src="website_images/image4.jpg" style="width: 300px; height: 200px;" alt="Placeholder Image">
         <img src="website_images/image5.jpg" style="width: 300px; height: 200px;" alt="Placeholder Image">
+        
     </div>
 
+
+
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var apiUrl = 'https://script.google.com/macros/s/AKfycbwoSDRyzCIZzeCBhirI3-1CoJLFfe25ZZpJBRSm67qFWkVpBhnMn7H2XewJnqHHZG2Z3w/exec';
+      document.addEventListener('DOMContentLoaded', function() {
+        var apiUrl = 'https://script.google.com/macros/s/AKfycbwoSDRyzCIZzeCBhirI3-1CoJLFfe25ZZpJBRSm67qFWkVpBhnMn7H2XewJnqHHZG2Z3w/exec';
 
-            // Fetch the current count
-            fetch(apiUrl)
-                .then(response => response.text())
-                .then(count => {
-                    document.getElementById('visit-count').textContent = count;
-                });
+        // Fetch the current count
+        fetch(apiUrl)
+          .then(response => response.text())
+          .then(count => {
+            document.getElementById('visit-count').textContent = count;
+          });
 
-            // Increment the count
-            fetch(apiUrl, { method: 'POST' })
-                .catch(error => console.error('Error updating visit count:', error));
-        });
+        // Increment the count
+        fetch(apiUrl, { method: 'POST' })
+          .catch(error => console.error('Error updating visit count:', error));
+      });
     </script>
 </body>
 </html>
