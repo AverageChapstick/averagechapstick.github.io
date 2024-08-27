@@ -56,6 +56,10 @@
         </p>
 
 
+
+        <p>Visit Count: <span id="visit-count">Loading...</span></p>
+
+
         <h2>Quote of the Day:</h2>
         <p>"I don't know how to use JavaScript and my quotes do not generate" -Andrew Chaplin
         </p>
@@ -88,5 +92,24 @@
         <img src="website_images/image5.jpg" style="width: 300px; height: 200px;" alt="Placeholder Image">
         
     </div>
+
+
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var apiUrl = 'https://script.google.com/macros/s/AKfycbwoSDRyzCIZzeCBhirI3-1CoJLFfe25ZZpJBRSm67qFWkVpBhnMn7H2XewJnqHHZG2Z3w/exec';
+
+        // Fetch the current count
+        fetch(apiUrl)
+          .then(response => response.text())
+          .then(count => {
+            document.getElementById('visit-count').textContent = count;
+          });
+
+        // Increment the count
+        fetch(apiUrl, { method: 'POST' })
+          .catch(error => console.error('Error updating visit count:', error));
+      });
+    </script>
 </body>
 </html>
