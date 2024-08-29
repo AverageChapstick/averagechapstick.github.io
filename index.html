@@ -1,11 +1,17 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>andrewchapl.in</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
     <style>
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -16,18 +22,21 @@
             background-repeat: no-repeat;
             color: #ffffff;
         }
+
         header {
             background-color: #5c98ff;
             color: white;
             padding: 10px 0;
             text-align: center;
         }
+
         .container {
             width: 80%;
             margin: 0 auto;
             padding: 20px;
             background-color: #262626;
         }
+
         .quote {
             width: 50%;
             font-size: 20px;
@@ -36,59 +45,64 @@
             padding: 20px;
             background-color: #262626;
         }
+
         img {
             max-width: 100%;
             height: auto;
         }
+
         a {
             color: #5c98ff;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
+
         h1 {
             border-bottom: none;
             padding-bottom: none;
         }
+
         h2 {
             border-bottom: 1px solid #444444;
             padding-bottom: 5px;
         }
+
         p {
             line-height: 1.6;
         }
+
         table {
             width: 30%;
             border-collapse: collapse;
         }
+
         table, th, td {
             border: 1px solid black;
         }
+
         th, td {
             padding: 8px;
             text-align: left;
         }
+
     </style>
+
 </head>
+
 <body>
-    <header>
-        <h1>andrewchapl.in</h1>
-    </header>
+
+    <header><h1>andrewchapl.in</h1></header>
+
     <div class="container">
 
-
-
         <h2>Hello!</h2>
-        <p>
-        I am Andrew Chaplin and this is my work-in-progress website. <a href="/about/">Who am I?</a>
-        </p>
+        <p>I am Andrew Chaplin and this is my work-in-progress website. <a href="/about/">Who am I?</a></p>
 
         <h2>Daily Quote:</h2>
-        <div class="quote">
-        <p>“It can often seem that those in power don't want us to enjoy making things for ourselves - they'd prefer to establish a cultural hierarchy that devalues our amateur efforts and encourages consumption rather than creation.” - David Byrne
-        </p>
-        </div>
+        <div class="quote"><p>“It can often seem that those in power don't want us to enjoy making things for ourselves - they'd prefer to establish a cultural hierarchy that devalues our amateur efforts and encourages consumption rather than creation.” - David Byrne</p></div>
 
         <!--<h2>Latest Update:</h2>
         <p>Favourite albums section added to <a href="/about/">"About Me"</a> page.</p>-->
@@ -128,6 +142,7 @@
         <center><p>© Andrew Chaplin 2024 | <a href="mailto: iamandrewchaplin@gmail.com">Contact me</a> | <a href="/about/">About me</a></p></center>
 
     <script>
+
       document.addEventListener('DOMContentLoaded', function() {
         var apiUrl = 'https://script.google.com/macros/s/AKfycbwoSDRyzCIZzeCBhirI3-1CoJLFfe25ZZpJBRSm67qFWkVpBhnMn7H2XewJnqHHZG2Z3w/exec';
 
@@ -142,7 +157,9 @@
         fetch(apiUrl, { method: 'POST' })
           .catch(error => console.error('Error updating visit count:', error));
       });
-    </script>
-</body>
-</html>
 
+    </script>
+
+</body>
+
+</html>
