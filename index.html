@@ -27,7 +27,14 @@
             margin: 0 auto;
             padding: 20px;
             background-color: #262626;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .quote {
+            width: 50%;
+            font-size: 20px;
+            font-family: Times New Roman;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #262626;
         }
         img {
             max-width: 100%;
@@ -44,11 +51,9 @@
             border-bottom: none;
             padding-bottom: none;
         }
-
         h2 {
             border-bottom: 1px solid #444444;
             padding-bottom: 5px;
-        }
         }
         p {
             line-height: 1.6;
@@ -79,9 +84,11 @@
         I am Andrew Chaplin and this is my work-in-progress website. <a href="/about/">Who am I?</a>
         </p>
 
-        <h2>Quote of the Day:</h2>
+        <h2>Daily Quote:</h2>
+        <div class="quote">
         <p>“It can often seem that those in power don't want us to enjoy making things for ourselves - they'd prefer to establish a cultural hierarchy that devalues our amateur efforts and encourages consumption rather than creation.” - David Byrne
         </p>
+        </div>
 
         <!--<h2>Latest Update:</h2>
         <p>Favourite albums section added to <a href="/about/">"About Me"</a> page.</p>-->
@@ -92,15 +99,15 @@
         <b>My name is also Andrew Chaplin, can I buy your domain?:</b> Yes, email me.<br>
         <b>How did you make this website?:</b> It's written in HTML with some JavaScript for the more interactive parts (working on it) and hosted on GitHub Pages.<br>
         <b>When did you make this?</b> 2020, but I got the domain name on August 26.<br>
-        <b>How many times have people visited this website?:</b> <span id="visit-count">Loading...</span>.<br>
+        <b>How many times have people visited this website?:</b> <span id="visit-count">..</span>.<br>
         <b>I have another question:</b> Email me.<br>
         </p>
 
-        <h2>Contact me:</h2>
+        <!--<h2>Contact me:</h2>
         
 
         <p><a href="mailto: iamandrewchaplin@gmail.com">Email</a> [iamandrewchaplin@gmail.com]<br>
-        </p>
+        </p>-->
 
 
 
@@ -116,7 +123,7 @@
 
     </div>
 
-        <center><p>© Andrew Chaplin 2024 | <a href="mailto: iamandrewchaplin@gmail.com">Contact me</a></p></center>
+        <center><p>© Andrew Chaplin 2024 | <a href="mailto: iamandrewchaplin@gmail.com">Contact me</a> | <a href="/about/">About me</a></p></center>
 
     <script>
       document.addEventListener('DOMContentLoaded', function() {
