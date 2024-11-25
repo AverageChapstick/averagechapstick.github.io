@@ -13,28 +13,27 @@
     <style>
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: Courier New, monospace;
             margin: 0;
             padding: 0;    
-            background-image: url("website_images/bg.jpg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: #ffffff;
-        }
-
-        header {
-            background-color: #5c98ff;
-            color: white;
-            padding: 10px 0;
+            background-image: url("website_images/bg.png");
+            background-size: 500px;
+            color: #000000;
             text-align: center;
         }
 
+        header {
+            color: white;
+            text-align: center;
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+
         .container {
-            width: 80%;
+            width: 40%;
             margin: 0 auto;
             padding: 20px;
-            background-color: #262626;
+            text-align: left;
         }
 
         .quote {
@@ -52,11 +51,13 @@
         }
 
         a {
-            color: #5c98ff;
+            color: #000000;
             text-decoration: none;
+            text-decoration: underline;
         }
 
         a:hover {
+            color: #ff0000;
             text-decoration: underline;
         }
 
@@ -66,12 +67,12 @@
         }
 
         h2 {
-            border-bottom: 1px solid #444444;
+            border-bottom: 1px solid #000000;
             padding-bottom: 5px;
         }
 
         p {
-            line-height: 1.6;
+            line-height: 1.6
         }
 
         table {
@@ -88,58 +89,56 @@
             text-align: left;
         }
 
+
+
+
+
+        .bottom-container {
+            margin: auto;
+            bottom: 0;
+            width: 30%;
+            color: #ffffff;
+
+            padding: 10px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 1);
+        }
+
+
+
     </style>
 
 </head>
 
 <body>
 
-    <header><h1>andrewchapl.in</h1></header>
+    <header><h1>
+<marquee behavior="scroll" direction="left" scrollamount="12">andrew</marquee>
+<marquee behavior="scroll" direction="right" scrollamount="12">chaplin</marquee>
+<marquee behavior="scroll" direction="left" scrollamount="20">andrew</marquee>
+<marquee behavior="scroll" direction="right" scrollamount="20">chaplin</marquee>
+</h1></header>
 
     <div class="container">
 
-        <h2>Hello!</h2>
-        <p>I am Andrew Chaplin and this is my website. <a href="/about/">Who am I?</a></p>
+        <h2 style="text-align: center;">Hello!</h2>
+        <p style="text-align: center;">I am Andrew Chaplin and this is my website. <a href="/about/">Who am I?</a></p>
 
-        <!--<h2>Daily Quote:</h2>
-        <div class="quote"><p>“I broke the website" - Andrew Chaplin</p></div>-->
+        <h2 style="text-align: center;">IAQ (infrequently asked questions):</h2>
 
-        <!--<h2>Latest Update:</h2>
-        <p>Favourite albums section added to <a href="/about/">"About Me"</a> page.</p>-->
-
-        <h2>IAQ (infrequently asked questions):</h2>
-        <p>
-        <b>andrew you nerd why the fuck did you make a website:</b> It's fun.<br>
-        <b>My name is also Andrew Chaplin, can I buy your domain?:</b> Yes, email me.<br>
-        <b>How did you make this website?:</b> It's written in HTML and hosted on GitHub Pages.<br>
-        <b>When did you make this?</b> 2020, but I got the domain name on August 26.<br>
-        <b>How many times have people visited this website?:</b> <span id="visit-count">..</span>.<br>
-        <b>I have another question:</b> Email me.<br>
-        </p>
-
-        <!--<h2>Contact me:</h2>
-        
-
-        <p><a href="mailto: iamandrewchaplin@gmail.com">Email</a> [iamandrewchaplin@gmail.com]<br>
-        </p>-->
-
-
-
-
-        <h2>Recent Photos:</h2>
-        <center>
-        <img src="website_images/img1.jpg" style="width: 300px; height: 300px;" alt="photo1">  
-        <img src="website_images/img2.jpg" style="width: 300px; height: 300px;" alt="photo2">
-        <img src="website_images/img4.jpg" style="width: 300px; height: 300px;" alt="photo3">
-        <img src="website_images/img3.jpg" style="width: 300px; height: 300px;" alt="photo4">
-        <img src="website_images/img5.jpg" style="width: 300px; height: 300px;" alt="photo5">
-        </center>
-        
-
+        <details><summary><b>andrew you nerd why the fuck did you make a website</b></summary>It's fun.</details>
+        <details><summary><b>My name is also Andrew Chaplin, can I buy this domain?:</b></summary>Yes, <a href="mailto: iamandrewchaplin@gmail.com">email me.</a></details>
+        <details><summary><b>How did you make this website?:</b></summary>It's written in HTML and hosted on GitHub Pages.</details>
+        <details><summary><b>When did you make this?:</b></summary>2020, but I got the domain name on August 26.</details>
+        <details><summary><b>Can you make me a website?:</b></summary>If you pay me then yeah.</details>
+        <details><summary><b>How many times have people visited this website?:</b></summary><span id="visit-count">..</span>.</details>
+        <b>▸ What is the meaning of life?</b>
+        <details><summary><b>I have another question:</b></summary><a href="mailto: iamandrewchaplin@gmail.com">Email me.</a></details>
 
     </div>
+        <div class="bottom-container">
+            <p>© Andrew Chaplin 2024 | <a href="mailto: iamandrewchaplin@gmail.com">Contact me</a> | <a href="/about/">About me</a></p>
+        </div>
 
-        <center><p>© Andrew Chaplin 2024 | <a href="mailto: iamandrewchaplin@gmail.com">Contact me</a> | <a href="/about/">About me</a></p></center>
 
     <script>
 

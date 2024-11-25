@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Favourite Albums</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;    
+            background-image: url("bg.png");
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #5c98ff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #262626;
+            border-radius: 8px;
+        }
+
+        .album {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #333333;
+            border-radius: 5px;
+        }
+
+        .album img {
+            width: 200px;
+            height: 200px;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+
+        .album-info {
+            color: #ffffff;
+        }
+
+        .album-info h2 {
+            margin: 0;
+            font-size: 1.6em;
+            color: #5c98ff;
+        }
+
+        .album-info p {
+            margin: 5px 0 0;
+            font-size: 0.95em;
+        }
+
+        a {
+            color: #5c98ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Favourite Albums</h1>
+    </header>
+
+    <div class="container">
+
+        <p><a href="../">Back to main page</a></p>
+
+        <!-- Album Entries -->
+        <div class="album">
+            <img src="album_covers/ok.png" alt="ok">
+            <div class="album-info">
+                <h2 style="color: #a3d3f0;">#1: Radiohead - OK Computer</h2>
+                <p>(I have never felt the touch of a woman)</p>
+            </div>
+        </div>
+
+        <div class="album">
+            <img src="album_covers/revolver.jpg" alt="revolver">
+            <div class="album-info">
+                <h2 style="color: #ffffff;">#2: The Beatles - Revolver</h2>
+                <p>Thirteen flawless, groundbreaking songs, plus Yellow Submarine</p>
+            </div>
+        </div>
+
+        <div class="album">
+            <img src="album_covers/hwy.jpg" alt="hwy">
+            <div class="album-info">
+                <h2 style="color: #d6651f;">#3: Bob Dylan - Highway 61 Revisited</h2>
+                <p>Even if the music sucked, this would still be worth listening to just for the lyrics</p>
+            </div>
+        </div>
+
+        <div class="album">
+            <img src="album_covers/wish.jpeg" alt="wish">
+            <div class="album-info">
+                <h2 style="color: #a1b7d8;">#4: Pink Floyd - Wish You Were Here</h2>
+                <p>David Gilmour's guitar playing makes me hard 😩😩😩</p>
+            </div>
+        </div>
+
+        <div class="album">
+            <img src="album_covers/ir.png" alt="ir">
+            <div class="album-info">
+                <h2 style="color: #e8b41f;">#5: Radiohead - In Rainbows</h2>
+                <p>good</p>
+            </div>
+        </div>
+
+        <div class="album">
+            <img src="album_covers/abbey.jpg" alt="abbey">
+            <div class="album-info">
+                <h2 style="color: #6aad73;">#6: The Beatles - Abbey Road</h2>
+                <p>They knew they were breaking up so they just started showing off</p>
+            </div>
+        </div>
+
+        <div class="album">
+            <img src="album_covers/bob.jpg" alt="bob">
+            <div class="album-info">
+                <h2 style="color: #b87d56;">#7: Bob Dylan - Blonde on Blonde</h2>
+                <p>Musically better than Hwy 61, more replay value, could place it higher depending on how I'm feeling that day</p>
+            </div>
+        </div>
+
+        <div class="album">
+            <img src="album_covers/mad.png" alt="mad">
+            <div class="album-info">
+                <h2 style="color: #ea5924;">#8: Madvillain - Madvillainy</h2>
+                <p>Somehow still gets better every time I listen to it</p>
+            </div>
+        </div>
+
+        <div class="album">
+            <img src="album_covers/flood.jpg" alt="flood">
+            <div class="album-info">
+                <h2 style="color: #3c748f;">#9: Boris - Flood</h2>
+                <p>So good Spotify had to gatekeep it</p>
+            </div>
+        </div>
+
+        <div class="album">
+            <img src="album_covers/spider.jpg" alt="spider">
+            <div class="album-info">
+                <h2 style="color: #000000;">#10: Slint - Spiderland</h2>
+                <p>Nerdy kid reads poetry while his friends run their musical instruments through a washing machine</p>
+            </div>
+        </div>
+
+        <div class="album">
+            <img src="album_covers/mm.jpeg" alt="mm">
+            <div class="album-info">
+                <h2 style="color: #6aad73;">#11: MF DOOM - MM..FOOD</h2>
+                <p>Delicious...</p>
+            </div>
+        </div>
+
+        <div class="album">
+            <img src="album_covers/ege.jpeg" alt="ege">
+            <div class="album-info">
+                <h2 style="color: #f1e037;">#12: Can - Ege Bamyasi</h2>
+                <p>I will never stop annoyingly recommending this band to people</p>
+            </div>
+        </div>
+
+        <div class="album">
+            <img src="album_covers/days.jpg" alt="days">
+            <div class="album-info">
+                <h2 style="color: #a57f41;">#13: Can - Future Days</h2>
+                <p>How did humans make this?</p>
+            </div>
+        </div>
+
+        <div class="album">
+            <img src="album_covers/london.jpg" alt="london">
+            <div class="album-info">
+                <h2 style="color: #008e50;">#14: The Clash - London Calling</h2>
+                <p>Blimey, it’s a right belter, innit? Proper ‘ave-it anthem, full o’ grit an’ swagger—top notch, no two ways about it!</p>
+            </div>
+        </div>
+
+        <div class="album">
+            <img src="album_covers/meddle.jpeg" alt="meddle">
+            <div class="album-info">
+                <h2 style="color: #0394a9;">#15: Pink Floyd - Meddle</h2>
+                <p>Warm Summer Evening - The Album</p>
+            </div>
+        </div>
+
+        <div class="album">
+            <img src="album_covers/exp.jpeg" alt="exp">
+            <div class="album-info">
+                <h2 style="color: #d8cd1b;">#16: The Jimmy Hendrix Experience - Are You Experienced?</h2>
+                <p>Well, are you?</p>
+            </div>
+        </div>
+
+        <div class="album">
+            <img src="album_covers/saw.png" alt="saw">
+            <div class="album-info">
+                <h2 style="color: #ffffff;">#17: Aphex Twin - Selected Ambient Works 85-92</h2>
+                <p>Autism soundtrack</p>
+            </div>
+        </div>
+
+        <div class="album">
+            <img src="album_covers/remain.jpg" alt="remain">
+            <div class="album-info">
+                <h2 style="color: #d21712;">#18: Talking Heads: Remain in Light</h2>
+                <p>David Byrne had it all figured out</p>
+            </div>
+        </div>
+
+        <div class="album">
+            <img src="album_covers/lady.jpg" alt="lady">
+            <div class="album-info">
+                <h2 style="color: #e8991a;">#19: The Jimi Hendrix Experience - Electric Ladyland</h2>
+                <p>yeah i mean he's pretty good at guitar ig</p>
+            </div>
+        </div>
+
+        <div class="album">
+            <img src="album_covers/heaven.jpeg" alt="heaven">
+            <div class="album-info">
+                <h2 style="color: #dc3626;">#20: Cocteau Twins - Heaven or Las Vegas</h2>
+                <p>this shit is in english??</p>
+            </div>
+        </div>
+
+        <div class="album">
+            <img src="album_covers/unknown.jpg" alt="unknown">
+            <div class="album-info">
+                <h2 style="color: #000000;">#21: Joy Division - Unknown Pleasures</h2>
+                <p>Fun upbeat pop tunes!</p>
+            </div>
+        </div>
+
+        <div class="album">
+            <img src="album_covers/king.jpg" alt="king">
+            <div class="album-info">
+                <h2 style="color: #b9889e;">#22: King Crimson - In the Court of the Crimson King</h2>
+                <p>idk i cant think of a description. the album is good</p>
+            </div>
+        </div>
+
+        <div class="album">
+            <img src="album_covers/low.jpg" alt="low">
+            <div class="album-info">
+                <h2 style="color: #ffa700;">#23: David Bowie - Low</h2>
+                <p>The first half is the weirdest shit you've ever heard, and the second half makes the first half sound normal</p>
+            </div>
+        </div>
+
+        <div class="album">
+            <img src="album_covers/station.jpg" alt="station">
+            <div class="album-info">
+                <h2 style="color: #cd3647;">#24: David Bowie - Station to Station</h2>
+                <p>Apparently cocaine abuse makes you a really good musician</p>
+            </div>
+        </div>
+
+        <div class="album">
+            <img src="album_covers/ziggy.jpg" alt="ziggy">
+            <div class="album-info">
+                <h2 style="color: #f8f27a;">#25: David Bowie - Ziggy Stardust and the Spiders From Mars</h2>
+                <p>Yeah I put three David Bowie albums together</p>
+            </div>
+        </div>
+
+        <div class="album">
+            <img src="album_covers/dummy.png" alt="dummy">
+            <div class="album-info">
+                <h2 style="color: #5a6ed8;">#26: Portishead - Dummy</h2>
+                <p>Massive Attack's depressed sister</p>
+            </div>
+        </div>
+
+        <div class="album">
+            <img src="album_covers/mezzanine.png" alt="mezzanine">
+            <div class="album-info">
+                <h2 style="color: #ffffff;">#27: Massive Attack - Mezzanine</h2>
+                <p>Portishead's antisocial brother</p>
+            </div>
+        </div>
+
+        <div class="album">
+            <img src="album_covers/roses.jpg" alt="roses">
+            <div class="album-info">
+                <h2 style="color: #4f775d;">#28: The Stone Roses - Stone Roses</h2>
+                <p>I want my music to sound like this</p>
+            </div>
+        </div>
+
+        <div class="album">
+            <img src="album_covers/deja.jpg" alt="deja">
+            <div class="album-info">
+                <h2 style="color: #f6c173;">#29: Crosby Stills Nash & Young - Déjà Vu</h2>
+                <p>Dream blunt rotation</p>
+            </div>
+        </div>
+
+        <div class="album">
+            <img src="album_covers/beagle.jpg" alt="beagle">
+            <div class="album-info">
+                <h2 style="color: #fb5891;">#30: Himiko Kukuchi - Flying Beagle</h2>
+                <p>The album cover is enough to put it up here</p>
+            </div>
+        </div>
+
+        <div class="album">
+            <img src="album_covers/charlie.jpg" alt="charlie">
+            <div class="album-info">
+                <h2 style="color: #019769;">#31: The Vince Guaraldi Trio - A Charlie Brown Christmas</h2>
+                <p>What Christmas is all about</p>
+            </div>
+        </div>
+
+        <div class="album">
+            <img src="album_covers/ants.jpg" alt="ants">
+            <div class="album-info">
+                <h2 style="color: #a97a44;">#32: Black Country, New Road - Ants From Up There</h2>
+                <p>One more Sad British Guy album to end the list</p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <footer>
+        <p>© Andrew Chaplin 2024 | <a href="mailto: iamandrewchaplin@gmail.com">Contact me</a></p>
+    </footer>
+
+</body>
+</html>
+
