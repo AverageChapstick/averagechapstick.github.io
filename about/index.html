@@ -7,31 +7,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>andrewchapl.in</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>About Andrew Chaplin</title>
+    <link rel="shortcut icon" href="../website_images/favicon.ico" type="image/x-icon">
 
     <style>
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: Courier New, monospace;
             margin: 0;
             padding: 0;    
-            background-image: url("bg.png");
-            color: #ffffff;
-        }
-
-        header {
-            background-color: #5c98ff;
-            color: white;
-            padding: 10px 0;
+            background-image: url("../website_images/bg.png");
+            background-size: 500px;
+            color: #000000;
             text-align: center;
         }
 
+        header {
+            color: white;
+            text-align: center;
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+
         .container {
-            width: 80%;
+            width: 40%;
             margin: 0 auto;
             padding: 20px;
-            background-color: #262626;
+            text-align: left;
         }
 
         .image-container img {
@@ -47,8 +49,9 @@
         }
 
         a {
-            color: #5c98ff;
+            color: #000000;
             text-decoration: none;
+            text-decoration: underline;
         }
 
         a:hover {
@@ -71,6 +74,9 @@
         table {
             width: 40%;
             border-collapse: collapse;
+            color: #000000;
+            padding: 10px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 1);
         }
 
         .center {
@@ -87,13 +93,31 @@
             text-align: left;
         }
 
+
+
+        footer {
+            margin: auto;
+            bottom: 0;
+            width: 30%;
+            color: #ffffff;
+
+            padding: 10px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 1);
+        }
+
+
     </style>
 
 </head>
 
 <body>
 
-    <header><h1>About Me</h1></header>
+    <header><h1>
+        <marquee behavior="scroll" direction="left" scrollamount="12">about</marquee>
+        <marquee behavior="scroll" direction="right" scrollamount="12">me</marquee>
+        <marquee behavior="scroll" direction="left" scrollamount="20">about</marquee>
+        <marquee behavior="scroll" direction="right" scrollamount="20">me</marquee>
+    </h1></header>
 
     <div class="container">
 
@@ -167,13 +191,16 @@
             </tr>
             <tr>
                 <td>Album:</td>
-                <td>OK Computer<a href="../albums/"> (and more)</a></td>
+                <td>OK Computer <a href="../albums/">(and more)</a></td>
             </tr>
 
         </table> 
     </div>
 
-            <center><p>© Andrew Chaplin 2024 | <a href="mailto: iamandrewchaplin@gmail.com">Contact me</a></p></center>
+    <footer>
+        <p>© Andrew Chaplin 2024 | <a href="mailto: iamandrewchaplin@gmail.com">Contact me</a></p>
+    </footer>
+
 
 </body>
 </html>
