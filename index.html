@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>andrewchapl.in</title>
-    <link rel="shortcut icon" href="website_images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../website_images/favicon.ico" type="image/x-icon">
 
     <style>
 
@@ -16,10 +16,13 @@
             font-family: Courier New, monospace;
             margin: 0;
             padding: 0;    
-            background-image: url("website_images/bg.png");
+            background-image: url("../website_images/bg.png");
             background-size: 500px;
             color: #000000;
             text-align: center;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
         }
 
         header {
@@ -34,6 +37,11 @@
             margin: 0 auto;
             padding: 20px;
             text-align: left;
+        }
+
+        .image-container img {
+            width: 100px;
+            height: 100px;
         }
 
         img {
@@ -106,9 +114,10 @@
     <div class="container">
 
         <h2 style="text-align: center;">Hello!</h2>
-        <p style="text-align: center;">I am Andrew Chaplin and this is my website. <a href="/about/">Who am I?</a></p>
+        <p style="text-align: center;">I am <a href="/about/">Andrew Chaplin</a> and this is my website.</p>
+        <p style="text-align: center;">I will start posting <a href="/film/">film photography</a> soon.</p>
 
-        <h2 style="text-align: center;">IAQ (infrequently asked questions):</h2>
+        <h2 style="text-align: center;">IAQ (infrequently-asked questions):</h2>
 
         <details><summary><b>andrew you nerd why the fuck did you make a website</b></summary>It's fun.</details>
         <details><summary><b>My name is also Andrew Chaplin, can I buy this domain?:</b></summary>Yes, <a href="mailto: iamandrewchaplin@gmail.com">email me.</a></details>
@@ -121,6 +130,7 @@
         <details><summary><b>I have another question:</b></summary><a href="mailto: iamandrewchaplin@gmail.com">Email me.</a></details>
 
     </div>
+    
     <footer>
         <p>© Andrew Chaplin 2024 | <a href="mailto: iamandrewchaplin@gmail.com">Contact me</a> | <a href="/about/">About me</a></p>
     </footer>
