@@ -19,7 +19,8 @@
             background-size: cover;
         }
         header {
-            padding: 5px 0;
+            color: white;
+            width: 70%;
         }
         .container {
             width: 50%;
@@ -65,12 +66,18 @@
             text-align: left;
         }
         footer {
-            margin: auto;
+            left: 0;
             bottom: 0;
-            width: 30%;
-            color: #ffffff;
-            padding: 10px;
-            border: 1px solid white;
+            padding-top: 5px;
+            background-color: rgba(255, 255, 255, 0.1);
+            width: 100%;
+            color: white;
+            text-align: center;
+        }
+
+        .header-container {
+            display: flex;
+            max-width: 600px;
         }
         green {
             color: #00ff00;
@@ -78,14 +85,25 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>
-            <marquee behavior="scroll" direction="left" scrollamount="12">film</marquee>
-            <marquee behavior="scroll" direction="right" scrollamount="12">photography</marquee>
-            <marquee behavior="scroll" direction="left" scrollamount="20">film</marquee>
-            <marquee behavior="scroll" direction="right" scrollamount="20">photography</marquee>
-        </h1>
-    </header>
+    <center>
+    <header><h1>
+        <div class="header-container">
+            <div class="container">
+                <marquee behavior="scroll" direction="left" scrollamount="12">andrew</marquee>
+                <marquee behavior="scroll" direction="right" scrollamount="12">chaplin</marquee>
+                <marquee behavior="scroll" direction="left" scrollamount="20">andrew</marquee>
+                <marquee behavior="scroll" direction="right" scrollamount="20">chaplin</marquee>
+            </div>
+            <div class="container">
+                <marquee behavior="scroll" direction="right" scrollamount="12"><a href="../">home</a></marquee>
+                <marquee behavior="scroll" direction="left" scrollamount="12"><a href="/about/">about</a></marquee>
+                <marquee behavior="scroll" direction="right" scrollamount="20"><a href="/albums/">favourite albums</a></marquee>
+                <marquee behavior="scroll" direction="left" scrollamount="20"><u>film</u></marquee>
+            </div>
+        </div>
+    </h1></header>
+    <center>
+
     <main class="container">
         <h2>Why film?</h2>
         <p2>

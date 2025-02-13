@@ -28,9 +28,7 @@
 
         header {
             color: white;
-            text-align: center;
-            padding-bottom: 5px;
-            padding-top: 5px;
+            width: 70%;
         }
 
         .container {
@@ -44,9 +42,7 @@
             width: 100px;
             height: 100px;
         }
-        flag {
-            font-size: 30px;
-        }
+
         img {
             max-width: 100%;
             height: auto;
@@ -66,6 +62,7 @@
         h1 {
             border-bottom: none;
             padding-bottom: none;
+            font-size: 40px;
         }
 
         h2 {
@@ -101,13 +98,18 @@
 
 
         footer {
-            margin: auto;
+            left: 0;
             bottom: 0;
-            width: 30%;
-            color: #ffffff;
+            padding: 5px;
+            background-color: rgba(0, 0, 100, 0.2);
+            width: 100%;
+            color: #000000;
+            text-align: center;
+        }
 
-            padding: 10px;
-            box-shadow: 0 -2px 5px rgba(0, 0, 0, 1);
+        .header-container {
+            display: flex;
+            max-width: 600px;
         }
 
 
@@ -117,12 +119,25 @@
 
 <body>
 
+    <center>
     <header><h1>
-        <marquee behavior="scroll" direction="left" scrollamount="12">about</marquee>
-        <marquee behavior="scroll" direction="right" scrollamount="12">me</marquee>
-        <marquee behavior="scroll" direction="left" scrollamount="20">about</marquee>
-        <marquee behavior="scroll" direction="right" scrollamount="20">me</marquee>
+        <div class="header-container">
+            <div class="container">
+                <marquee behavior="scroll" direction="left" scrollamount="12">andrew</marquee>
+                <marquee behavior="scroll" direction="right" scrollamount="12">chaplin</marquee>
+                <marquee behavior="scroll" direction="left" scrollamount="20">andrew</marquee>
+                <marquee behavior="scroll" direction="right" scrollamount="20">chaplin</marquee>
+            </div>
+            <div class="container">
+                <marquee behavior="scroll" direction="right" scrollamount="12"><a href="../">home</a></marquee>
+                <marquee behavior="scroll" direction="left" scrollamount="12"><u>about</u></marquee>
+                <marquee behavior="scroll" direction="right" scrollamount="20"><a href="/albums/">favourite albums</a></marquee>
+                <marquee behavior="scroll" direction="left" scrollamount="20"><a href="/film/">film</a></marquee>
+            </div>
+        </div>
     </h1></header>
+    <center>
+
 
     <div class="container">
         <h2>Basics:</h2>

@@ -18,16 +18,12 @@
             padding: 0;    
             color: #000000;
             text-align: center;
-            background: linear-gradient(rgba(150, 100, 100, 0.9), rgba(100, 100, 150, 0.9)), url("../website_images/film/3/30.jpg");
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+            background-color: #990000;
         }
 
         header {
-            color: white;
-            text-align: center;
+            color: #fffde8;
+            width: 70%;
         }
 
         .container {
@@ -39,10 +35,6 @@
         .image-container img {
             width: 40%;
             height: 40%;
-        }
-
-        flag {
-            font-size: 30px;
         }
 
         img {
@@ -64,7 +56,7 @@
         }
 
         .album-info {
-            color: #ffffff;
+            color: #fffde8;
         }
 
         .album-info h2 {
@@ -79,19 +71,20 @@
         }
 
         a {
-            color: #ffffff;
+            color: #000000;
             text-decoration: none;
             text-decoration: underline;
         }
 
         a:hover {
-            color: #ff0000;
+            color: #ff9999;
             text-decoration: underline;
         }
 
         h1 {
             border-bottom: none;
             padding-bottom: none;
+            font-size: 40px;
         }
 
         h2 {
@@ -100,6 +93,7 @@
 
         p {
             line-height: 1.6;
+            color: #fffde8;
         }
 
         .center {
@@ -108,13 +102,19 @@
         }
 
         footer {
-            margin: auto;
+            left: 0;
             bottom: 0;
-            width: 30%;
-            color: #ffffff;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color: rgba(0, 0, 100, 0.2);
+            width: 100%;
+            color: #fffde8;
+            text-align: center;
+        }
 
-            padding: 10px;
-            border: 1px solid white;
+        .header-container {
+            display: flex;
+            max-width: 600px;
         }
 
     </style>
@@ -123,12 +123,24 @@
 
 <body>
 
+    <center>
     <header><h1>
-        <marquee behavior="scroll" direction="left" scrollamount="12">favourite</marquee>
-        <marquee behavior="scroll" direction="right" scrollamount="12">albums</marquee>
-        <marquee behavior="scroll" direction="left" scrollamount="20">favourite</marquee>
-        <marquee behavior="scroll" direction="right" scrollamount="20">albums</marquee>
+        <div class="header-container">
+            <div class="container">
+                <marquee behavior="scroll" direction="left" scrollamount="12">andrew</marquee>
+                <marquee behavior="scroll" direction="right" scrollamount="12">chaplin</marquee>
+                <marquee behavior="scroll" direction="left" scrollamount="20">andrew</marquee>
+                <marquee behavior="scroll" direction="right" scrollamount="20">chaplin</marquee>
+            </div>
+            <div class="container">
+                <marquee behavior="scroll" direction="right" scrollamount="12"><a href="../">home</a></marquee>
+                <marquee behavior="scroll" direction="left" scrollamount="12"><a href="/about/">about</a></marquee>
+                <marquee behavior="scroll" direction="right" scrollamount="20"><u>favourite albums</u></marquee>
+                <marquee behavior="scroll" direction="left" scrollamount="20"><a href="/film/">film</a></marquee>
+            </div>
+        </div>
     </h1></header>
+    <center>
 
     <div class="container">
 
