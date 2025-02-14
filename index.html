@@ -86,11 +86,14 @@
         footer {
             left: 0;
             bottom: 0;
+            padding-top: 5px;
+            padding-bottom: 5px;
             background-color: rgba(0, 0, 100, 0.2);
             width: 100%;
-            color: white;
+            color: #fffde8;
             text-align: center;
         }
+
 
         .header-container {
             display: flex;
@@ -149,30 +152,36 @@
 
     </div>
     
-    <footer>
-        <p>© Andrew Chaplin 2024 | <a href="mailto: iamandrewchaplin@gmail.com">Contact me</a> | <a href="/about/">About me</a></p>
-    </footer>
-
-
-    <script>
-
-      document.addEventListener('DOMContentLoaded', function() {
-        var apiUrl = 'https://script.google.com/macros/s/AKfycbwoSDRyzCIZzeCBhirI3-1CoJLFfe25ZZpJBRSm67qFWkVpBhnMn7H2XewJnqHHZG2Z3w/exec';
-
-        // Fetch the current count
-        fetch(apiUrl)
-          .then(response => response.text())
-          .then(count => {
-            document.getElementById('visit-count').textContent = count;
-          });
-
-        // Increment the count
-        fetch(apiUrl, { method: 'POST' })
-          .catch(error => console.error('Error updating visit count:', error));
-      });
-
-    </script>
 
 </body>
+
+<footer>
+    <p>© Andrew Chaplin 2024 | <a href="mailto: iamandrewchaplin@gmail.com">Contact me</a> | <a href="/about/">About me</a></p>
+</footer>
+
+
+
+<script>
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var apiUrl = 'https://script.google.com/macros/s/AKfycbwoSDRyzCIZzeCBhirI3-1CoJLFfe25ZZpJBRSm67qFWkVpBhnMn7H2XewJnqHHZG2Z3w/exec';
+
+    // Fetch the current count
+    fetch(apiUrl)
+      .then(response => response.text())
+      .then(count => {
+        document.getElementById('visit-count').textContent = count;
+      });
+
+    // Increment the count
+    fetch(apiUrl, { method: 'POST' })
+      .catch(error => console.error('Error updating visit count:', error));
+  });
+
+</script>
+
+
+
+
 
 </html>
